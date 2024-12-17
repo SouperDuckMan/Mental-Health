@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Google Drive Redirect</title>
+</head>
+<body>
+
+    <a href="#" id="randomLink" onclick="redirect()">Click here to open a random Google Drive link</a>
+
+    <script>
+        function redirect() {
+            // Array of Google Drive links
+            const links = [
+                'https://drive.google.com/your-link-1',
+                'https://drive.google.com/your-link-2',
+                'https://drive.google.com/your-link-3',
+                'https://drive.google.com/your-link-4',
+                'https://drive.google.com/your-link-5'
+            ];
+
+            // Generate a random index
+            const randomIndex = Math.floor(Math.random() * links.length);
+
+            // Redirect to the randomly selected Google Drive link
+            window.location.href = links[randomIndex];
+        }
+    </script>
+
+</body>
+</html>
